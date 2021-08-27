@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Control</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <script src="scripts/page2.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <div class="navigation__btn-wraper">
+          <a class="navigation__btn-news" id="nav-toggler">
+          </a>
+          <a class="navigation__btn-counter"></a>
+        </div>
+        <div class="navigation__btn-wraper">
+          <a class="navigation__btn-user"></a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="sidebar">
+        <div class="sidebar__announcement-wrapper">
+          <div class="sidebar__announcement">
+            Тут будуть показані всі нові сповіщення
+          </div>
+        </div>
+      </section>
+      <div class="main__content">
+        <nav>
+          <img src="./images/Sidebar_full.png">
+        </nav>
+        <section class="tabs">
+          <button
+            class="tabs__link tabs__link--active"
+          >
+            Мій акаунт
+          </button>
+          <button
+            class="tabs__link"
+          >
+            Історія транзакцій
+          </button>
+          <button
+            class="tabs__link"
+          >
+            Сповіщення
+          </button>
+          <div class="tabs__content">
+            <img 
+              src="./images/contentPage2.jpg"
+              alt="content"
+            >
+          </div>
+          <div
+            style="display: none"
+            class="tabs__content"
+          >
+            data 2
+          </div>
+          <div
+            style="display: none"
+            class="tabs__content"
+          >
+            data 3
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__segment">
+          <h4 class="footer__title">
+            Дзвінок безкоштовний
+          </h4>
+          <a
+            href="tel:0800309077"
+            class="footer__link-tel"
+          >
+            0 800 309 077
+          </a>
+          <a
+            href="mailto:mail@youcontrol.com.ua"
+            class="footer__link-text"
+          >
+            mail@youcontrol.com.ua
+          </a>
+          <h4 class="footer__title">
+            Вирішили купувати?
+          </h4>
+          <button class="footer__btn">
+            Заказать звонок
+          </button>
+        </div>
+        <div class="footer__segment">
+          <h5 class="footer__sub-title">
+            Для користувачів
+          </h5>
+          <a class="footer__link">
+            Можливості
+          </a>
+          <a class="footer__link">
+            Кейси
+          </a>
+          <a class="footer__link">
+            Тарифи
+          </a>
+        </div>
+        <div class="footer__segment">
+          <h5 class="footer__sub-title">
+            Наші проекти
+          </h5>
+          <a class="footer__link-logo1">
+            YouScore
+            <div class="footer__text-add">
+              Доступ по API
+            </div>
+          </a>
+          <a class="footer__link-logo2">
+            Додаток
+            <div class="footer__text-add">
+              Chrome, Mozilla
+            </div>
+          </a>
+          </div>
+        <div class="footer__info-segment">
+          <p class="footer__info-title">
+            ©YouControl – повне досьє на кожну компанію України
+          </p>
+          <div class="footer__networks">
+            <a
+              href="https://www.facebook.com/"
+              class="footer__networks-facebook"
+              target="_blank"
+              rel="noopener"
+            >
+            </a>
+            <a
+              href="https://twitter.com/"
+              class="footer__networks-youtube"
+              target="_blank"
+              rel="noopener"
+            >
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              class="footer__networks-linkedin"
+              target="_blank"
+              rel="noopener"
+            >
+            </a>
+            <a
+              href="https://telegram.org/"
+              class="footer__networks-telegram"
+              target="_blank"
+              rel="noopener"
+            >
+            </a>
+            <div class="footer__info-pay">
+              Сплачуйте онлайн:
+              <img
+                class="footer__info-img"
+                src="./images/i-visa_icon.svg"
+              >
+              <img src="./images/master-card-icon.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

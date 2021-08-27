@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: $headerHeight;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 120px;
+  padding: 10px;
+
+  &__btn-wraper {
+    position: relative;
+    padding-right: 20px;
+  }
+  
+  &__btn-news {
+    content: url(../images/Group6.svg);
+    transition: content 0.5s ease-in-out;
+
+    &:hover {
+      content: url(../images/Group6-hover.svg);
+    }
+  }
+
+  &__btn-counter {
+    content: url(../images/Group5.svg);
+    position: absolute;
+    top: -10px;
+    left: 12px;
+  }
+
+
+  &__btn-user {
+    display:block;
+    content: url(../images/Group4.svg);
+    }
+}

@@ -1,0 +1,181 @@
+.footer {
+  @include block-padding;
+  width: 100%;
+  max-height: max-content;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: space-between;
+    width:80%;
+    padding-top: 24px;
+
+    @media (max-width: $iPadMini) {
+      grid-template-columns: 1fr 1fr;
+      padding-top: 100px;
+    }
+
+    @media (max-width: $iPhoneSE) {
+      grid-template-columns: 1fr;
+      padding-top: 50px;
+    }
+  }
+
+  &__segment {
+    max-width: 250px;
+  }
+
+  &__title {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    padding-bottom: 5px;
+  }
+
+  &__link-tel {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: color 0.5s ease-in-out;
+  }
+
+  &__link-text {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #0091D9;
+    padding-bottom: 16px;
+    transition: color 0.5s ease-in-out;
+  }
+
+  &__link-tel,
+  &__link-text {
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  &__btn{
+    width: 140px;
+    height: 31px;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $mainColor;
+    color: #FFFFFF;
+    border: 1px solid $mainColor;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      color: $mainColor;
+      border: 1px solid $mainColor;
+      background-color: #FFFFFF;
+    }
+  }
+
+  &__sub-title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    padding-bottom: 12px;
+  }
+
+  &__link,
+  &__link-logo1,
+  &__link-logo2 {
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  &__link-logo1 {
+    &::before {
+      content:url(../images/YouScore.svg);
+      position: relative;
+      top: 6px;
+    }
+  }
+
+  &__link-logo2 {
+    &::before {
+      content:url(../images/i-extensions.svg);
+      position: relative;
+      top: 6px;
+    }
+  }
+
+  &__text-add {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #999999;
+    padding-left: 20px;
+  }
+
+  &__info-segment {
+    text-align: right;
+    @media (max-width: $iPadMini) {
+      text-align: left;
+    }
+  }
+
+  &__info-title {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+    padding-bottom: 12px;
+  }
+
+  &__networks {
+    margin-bottom: 44px;
+
+    &-facebook {
+      @include social-networks;
+      content: url(../images/social/i-facebook.svg);
+    }
+
+    &-youtube {
+      @include social-networks;
+      content: url(../images/social/i-youtube.svg);
+    }
+
+    &-linkedin {
+      @include social-networks;
+      content: url(../images/social/linkedin.svg);
+    }
+
+    &-telegram {
+      @include social-networks;
+      content: url(../images/social/telegram.svg);
+    }
+  }
+
+  &__info-pay {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+  }
+
+  &__info-img {
+    padding: 0 5px;
+    padding-top: 44px;
+  }
+}

@@ -1,0 +1,115 @@
+.sidebar {
+  position: absolute;
+  top: $headerHeight;
+  right: 0;
+  width: 420px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: visibility 0.5s ease-in-out;
+
+  &-active {
+    transform: translateY(0);
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 15px;
+    color: #717171;
+    padding: 20px 15px;
+  }
+
+  &__card {
+    background-color: $lightGray;
+    padding: 10px 15px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    cursor: pointer;
+
+    &-status{
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 10px;
+      line-height: 14px;
+      padding: 10px;
+      background-color: $mainColor;
+      border-radius: 20px;
+    }
+
+    &-date {
+      font-size: 13px;
+      line-height: 15px;
+      color: #BEBEBE;
+      opacity: 0.75;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 14px;
+    color: #1A1A1A;
+    opacity: 0.75;
+    padding: 15px 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+    opacity: 0.75;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 80%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: $mainColor;
+    border: 1px solid $mainColor;
+    color: #fff;
+    border-radius: 3px;
+    margin: 16px 0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: $mainColor;
+      border: 1px solid $mainColor;
+      background-color: #FFFFFF;
+    }
+  }
+
+  &__announcement-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__announcement {
+    position: relative;
+    text-align: center;
+    width: 240px;
+    font-size: 18px;
+    line-height: 26px;
+
+    &::before {
+      content: url(../images/announcement.svg);
+      position:absolute;
+      top: -80px;
+      right: 90px;
+    }
+  }
+}

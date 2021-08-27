@@ -3,11 +3,242 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
+    <title>You Control</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <script src="scripts/index.js" defer></script>
   </head>
   <body>
-    <h1>Miami</h1>
+    <header class="header">
+      <section class="pop-up">
+        <div class="pop-up__close-wrapper">
+          <a class="pop-up__close">
+          </a>
+        </div>
+        <div class="pop-up__content">
+          <div>
+            <div class="pop-up__wrapper">
+              <span class="pop-up__card-status">
+                оновлення
+              </span>
+              <div class="pop-up__card-date">
+                Сьогодні 29.05.2019
+              </div>
+            </div>
+            <h4 class="pop-up__subtitle">
+              Нові функції моніторинга
+            </h4>
+            <p class="pop-up__text">
+              Додайте свою компанію та головних контрагентів до моніторингу та першим дізнавайтесь про істотні зміни офіційних даних.
+            </p>
+            <ul class="pop-up__list">
+              <li>
+                Нові кольори;
+              </li>
+              <li>
+                Додавайте більше списків.
+              </li>
+            </ul>
+          </div>
+          <h4 class="pop-up__subtitle">
+            Що нового?
+          </h4>
+          <img
+            class="pop-up__img"
+            src="./images/image.jpg"
+            alt="content"
+          >
+          <p class="pop-up__text">
+            Якщо ви поставите в моніторинг власне підприємство, то отримаєте автоматичне сповіщення, якщо його дані в реєстрах змінилися без вашої участі. Зі звіту моніторингу ви можете дізнатися про нього навіть раніше співробітників самого підприємства, адже сповіщення з’явиться того самого дня. За своєю ініціативою контрагент навряд чи повідомить вам цю інформацію, а вона може бути критично важливою для вашої співпраці.
+          </p>
+        </div>
+        <div class="pop-up__navigation">
+          <a class="pop-up__btn-previous">
+            Назад
+          </a>
+          <a class="pop-up__btn-next">
+            Наступне сповіщення
+          </a>
+        </div>
+      </section>
+      <div class="navigation">
+        <div class="navigation__btn-wraper">
+          <a class="navigation__btn-news" id="nav-toggler">
+          </a>
+          <a class="navigation__btn-counter"></a>
+        </div>
+        <div class="navigation__btn-wraper">
+          <a class="navigation__btn-user"></a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="sidebar">
+        <h3 class="sidebar__title">
+          Сповіщення від YouControl
+        </h3>
+        <div class="sidebar__card" id="card1">
+          <div class="sidebar__wrapper">
+            <span class="sidebar__card-status">
+              оновлення
+            </span>
+            <div class="sidebar__card-date">
+              Сьогодні 29.05.2019
+            </div>
+          </div>
+          <h4 class="sidebar__subtitle">
+            Нові функції моніторинга
+          </h4>
+          <p class="sidebar__text">
+            Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.
+          </p>
+        </div>
+
+        <div class="sidebar__card">
+          <div class="sidebar__wrapper">
+            <span class="sidebar__card-status">
+              оновлення
+            </span>
+            <div class="sidebar__card-date">
+              Сьогодні 29.05.2019
+            </div>
+          </div>
+          <h4 class="sidebar__subtitle">
+            Нові функції моніторинга
+          </h4>
+          <p class="sidebar__text">
+            Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.
+          </p>
+        </div>
+        <div class="sidebar__card">
+          <div class="sidebar__wrapper">
+            <span class="sidebar__card-status">
+              оновлення
+            </span>
+            <div class="sidebar__card-date">
+              Сьогодні 29.05.2019
+            </div>
+          </div>
+          <h4 class="sidebar__subtitle">
+            Нові функції моніторинга
+          </h4>
+          <p class="sidebar__text">
+            Uniquely fashion B2B content for one-to-one web-readiness. Continually embrace.
+          </p>
+        </div>
+        <div class="sidebar__btn-wrapper">
+          <a class="sidebar__btn"
+            href="./page2.html"
+          >
+            Переглянути всі
+          </a>
+        </div>
+      </section>
+      <img
+        src="./images/Product - Анонс новых фич-1.png"
+        alt="main-content"
+      >
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__segment">
+            <h4 class="footer__title">
+              Дзвінок безкоштовний
+            </h4>
+            <a
+              href="tel:0800309077"
+              class="footer__link-tel">
+              0 800 309 077
+            </a>
+            <a
+              href="mailto:mail@youcontrol.com.ua"
+              class="footer__link-text"
+            >
+              mail@youcontrol.com.ua
+            </a>
+            <h4 class="footer__title">
+              Вирішили купувати?
+            </h4>
+            <button class="footer__btn">
+              Заказать звонок
+            </button>
+          </div>
+          <div class="footer__segment">
+            <h5 class="footer__sub-title">
+              Для користувачів
+            </h5>
+            <a class="footer__link">
+              Можливості
+            </a>
+            <a class="footer__link">
+              Кейси
+            </a>
+            <a class="footer__link">
+              Тарифи
+            </a>
+          </div>
+          <div class="footer__segment">
+            <h5 class="footer__sub-title">
+              Наші проекти
+            </h5>
+            <a class="footer__link-logo1">
+              YouScore
+              <div class="footer__text-add">
+                Доступ по API
+              </div>
+            </a>
+            <a class="footer__link-logo2">
+              Додаток
+              <div class="footer__text-add">
+                Chrome, Mozilla
+              </div>
+            </a>
+          </div>
+          <div class="footer__info-segment">
+            <p class="footer__info-title">
+              ©YouControl – повне досьє на кожну компанію України
+            </p>
+            <div class="footer__networks">
+              <a
+                href="https://www.facebook.com/"
+                class="footer__networks-facebook"
+                target="_blank"
+                rel="noopener"
+              >
+              </a>
+              <a
+                href="https://twitter.com/"
+                class="footer__networks-youtube"
+                target="_blank"
+                rel="noopener"
+              >
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                class="footer__networks-linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+              </a>
+              <a
+                href="https://telegram.org/"
+                class="footer__networks-telegram"
+                target="_blank"
+                rel="noopener"
+              >
+              </a>
+              <div class="footer__info-pay">
+                Сплачуйте онлайн:
+                <img
+                  class="footer__info-img"
+                  src="./images/i-visa_icon.svg"
+                >
+                <img src="./images/master-card-icon.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
   </body>
 </html>
